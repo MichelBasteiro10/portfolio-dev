@@ -71,6 +71,7 @@
         justify-content: center;
         list-style: none;
         width: 754px;
+        margin-bottom: 94px;
     }
 
     .tag > img {
@@ -102,6 +103,53 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        h3 {
+            font: var(--inconsolata-subtitle);
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font: var(--asap-title-md);
+            margin-bottom: 56px;
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 330px);
+        grid-template-rows: repeat(2, 280px);
+        column-gap: 24px;
+        row-gap: 24px;
+        justify-content: center;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--gray-300);
+        align-items: flex-start;
+        justify-content: center;
+        border-radius: 12px;
+        padding-inline: 12px;
+        padding-bottom: 17px;
+
+        img {
+            width: 306px;
+            height: 156px;
+            margin: 12px auto 24px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+            font: var(--asap-title-sm);
+        }
+
+        p {
+            font: var(--maven-text-sm);
+            color: var(--gray-500);
+        }
     }
 }
 
@@ -117,4 +165,8 @@
     background-image: url(../assets/images/Background_Contacts.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.red {
+    color: var(--red);
 }
