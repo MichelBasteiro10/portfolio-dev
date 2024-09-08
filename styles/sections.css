@@ -151,12 +151,69 @@
             color: var(--gray-500);
         }
     }
+
+    .project-card:hover {
+        border: 2px solid var(--gray-400);
+    }
 }
 
 #services {
     width: 100%;
     height: 480px;
     background-color: var(--gray-100);
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 86px;
+        margin-bottom: 56px;
+
+        h3{
+            font: var(--inconsolata-subtitle);
+            margin-bottom: 8px;
+        }
+
+        h2{
+            font: var(--asap-title-md);
+            color: var(--gray-600);
+        }
+    }
+
+    #skills {
+        display: grid;
+        grid-template-columns: repeat(3,280px);
+        column-gap: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 155px;
+        border: solid 2px var(--gray-200);
+        border-radius: 12px;
+        padding: 20px;
+
+        img {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font: var(--asap-title-sm);
+            color: var(--gray-600);
+            margin-bottom: 8px;
+        }
+
+        p{
+            font: var(--maven-text-sm);
+            color: var(--gray-500);
+        }
+    }
 }
 
 #contacts {
@@ -165,6 +222,66 @@
     background-image: url(../assets/images/Background_Contacts.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 128px;
+        margin-bottom: 48px;
+
+        h3{
+            font: var(--inconsolata-subtitle);
+            color: var(--purple);
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font: var(--asap-title-md);
+            color: var(--gray-600);
+            margin-bottom: 8px;
+        }
+
+        p {
+            font: var(--maven-text-md);
+            color: var(--gray-500);
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+
+    ul > :hover {
+        border: 3px solid var(--blue);
+     }
+
+    li {
+        width: 400px;
+        background-color: var(--gray-300);
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        padding: 20px;
+        border-radius: 8px;
+
+        p {
+            font: var(--maven-text-md);
+            color: var(--gray-500);
+            width: 288px;
+        }
+    }
+
+    li > :nth-child(1) {
+        margin-right: 12px;
+    }
+
+    li > img:hover {
+        color: var(--blue);
+    }
 }
 
 .red {
