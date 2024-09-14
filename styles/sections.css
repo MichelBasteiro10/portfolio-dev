@@ -186,6 +186,10 @@
         column-gap: 24px;
         justify-content: center;
         align-items: center;
+
+        /* img {
+            width: 55px;
+        } */
     }
 
     .card {
